@@ -7,6 +7,7 @@ public class combo : MonoBehaviour
     public Text combox;
     private Animator anim;
     public bool space=false;
+    public float ret=0;
     public int a=0;
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,7 @@ public class combo : MonoBehaviour
     }
     public IEnumerator animat()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(ret);
         Debug.Log("space");
         space = false;
 

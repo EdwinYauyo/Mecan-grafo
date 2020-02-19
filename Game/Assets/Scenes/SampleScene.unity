@@ -234,6 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combox: {fileID: 389478367}
   space: 0
+  ret: 0.2
   a: 0
 --- !u!1 &519420028
 GameObject:
