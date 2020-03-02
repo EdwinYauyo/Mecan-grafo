@@ -20,19 +20,17 @@ public class lector : MonoBehaviour
     {
         
         inputt = input.text;
-        Debug.Log(inputt);
+        //Debug.Log(inputt);
         if (texto.GetComponent<Text>().text == inputt)
         {
             message.SetActive(true);
         }
+        else message.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-
-        } 
+        Comprobar();
     }
 }

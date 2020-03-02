@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class prueba : MonoBehaviour
 {
-    public Text gt;
-
+    private Text gt;
+    public Text meta;
     void Start()
     {
         gt = GetComponent<Text>();
@@ -22,9 +22,16 @@ public class prueba : MonoBehaviour
                     gt.text = gt.text.Substring(0, gt.text.Length - 1);
                 }
             }
-            else if ((c == '\n') || (c == '\r')) // enter/return
+            else if (c==' ') // space?
             {
-                print("User entered their name: " + gt.text);
+                
+                Debug.Log("space");
+                if (gt.text == meta.text)
+                {
+                    Debug.Log("correcto");
+                }
+                else Debug.Log("incorrecto");
+                gt.text += c;
             }
             else
             {
