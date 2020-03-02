@@ -63,6 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\combo.cs" />
+    <Compile Include="Assets\Scripts\lector.cs" />
+    <Compile Include="Assets\Scripts\prueba.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Edwin/ACECOM/Mecanógrafo/Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
